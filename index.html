@@ -16,7 +16,7 @@
     </div>
 
     <img src="assets/images/icone_usuario.jpg" alt="Imagem de Perfil" height="100" width="100">
-    <form function="dashboard.html" method="get">
+    <form action="dashboard.html" method="get">
         <div class="login">
             <label for="email">E-mail:</label> <br>
             <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
@@ -25,10 +25,18 @@
         </div>
 
         <div class="botoes">
-            <input type="button" id="cadastro" value="Cadastre-se">
-            <input type="submit" id="login" value="Logar">
-            <input type="button" id="sabermais" value="Saber Mais">
+            <a id="cadastro" href="#">Cadastrar-se</a>
+            <button type="submit" id="login">Logar</button>
+            <a id="saibamais" href="https://www.automateshow.com/blog/how-automation-is-impacting-the-automotive-industry-today" target="_blank">Saiba Mais</a>
         </div>
     </form>
+
+    <footer>
+        <p> &copy; 2026 Meu Site. Todos Direitos Reservados</p>
+        <ul>
+            <li><a href="https://pedrotech.com.br/pedrolandia/">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </footer>
 </body>
 </html>
