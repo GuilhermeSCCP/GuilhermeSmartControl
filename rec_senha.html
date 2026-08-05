@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartControl | Recuperar Senha</title>
+</head>
+<body>
+    <h1>Digite seu email de recuperação</h1>
+    <img src="assets/images/icone_usuario.jpg" alt="ícone de usuário">
+    <form method="dialog">
+        <div class="recuperar_senha">
+            <label for="email">E-mail:</label> <br>
+            <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
+        </div>
+
+        <div class="botoes">
+            <a id="voltar_login" href="index.html">Voltar para o Login</a>
+            <button type="submit" id="enviar_codigo">Enviar Código</button>
+        </div>
+    </form>
+
+    <form action="#" method="get">
+        <label for="digitar_codigo">Digite o Código de Recuperação</label>
+        <input type="text" name="digitar_codigo" id="digitar_codigo" placeholder="Insira o Código" minlength="6" maxlength="6" required>
+        
+        <button type="submit" id="codigo">Confirmar</button>
+    </form>
+</body>
+</html>
