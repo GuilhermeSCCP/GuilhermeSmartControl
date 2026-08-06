@@ -7,20 +7,22 @@
     <title>SmartControl | Recuperar Senha</title>
 </head>
 <body>
-    <h1>Registre sua nova Senha</h1>
-    <img src="assets/images/icone_usuario.jpg" alt="ícone de usuário">
-    <form action="index.html" method="get">
-        <div class="registrar_senha">
-            <label for="nova_senha">Nova Senha</label> <br>
-            <input type="text" name="nova_senha" id="nova_senha" placeholder="Digite a senha" minlength="8" maxlength="20" required>
-            <label for="confirme_senha">Confirme a Senha</label> <br>
-            <input type="text" name="confirme_senha" id="confirme_senha" placeholder="Digite a senha" minlength="8" maxlength="20" required>
-        </div>
+    <div class="formulario">
+        <h1>Registre sua nova Senha</h1>
+        <img src="assets/images/icone_usuario.jpg" alt="ícone de usuário">
+        <form action="index.html" method="get">
+            <div class="registrar_senha">
+                <label for="nova_senha">Nova Senha</label> <br>
+                <input type="text" name="nova_senha" id="nova_senha" placeholder="Digite a senha" minlength="8" maxlength="20" required>
+                <label for="confirme_senha">Confirme a Senha</label> <br>
+                <input type="text" name="confirme_senha" id="confirme_senha" placeholder="Digite a senha" minlength="8" maxlength="20" required>
+            </div>
 
-        <div class="botoes">
-            <a id="voltar_login" href="index.html">Voltar para o Login</a>
-            <button type="submit" id="botao_registrar">Registrar a Senha</button>
-        </div>
-    </form>
+            <div class="botoes">
+                <a id="voltar_login" href="index.html">Voltar para o Login</a>
+                <button type="submit" id="botao_registrar">Registrar a Senha</button>
+            </div>
+        </form>
+    </div>
 </body>
 </html>

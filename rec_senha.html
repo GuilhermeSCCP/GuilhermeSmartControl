@@ -7,25 +7,29 @@
     <title>SmartControl | Recuperar Senha</title>
 </head>
 <body>
-    <h1>Digite seu email de recuperação</h1>
-    <img src="assets/images/icone_usuario.jpg" alt="ícone de usuário">
-    <form method="dialog">
-        <div class="recuperar_senha">
-            <label for="email">E-mail:</label> <br>
-            <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
-        </div>
+    <div class="formulario-email">
+        <h1>Digite seu email de recuperação</h1>
+        <img src="assets/images/icone_usuario.jpg" alt="ícone de usuário">
+        <form method="dialog">
+            <div class="recuperar_senha">
+                <label for="email">E-mail:</label> <br>
+                <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
+            </div>
 
-        <div class="botoes">
-            <a id="voltar_login" href="index.html">Voltar para o Login</a>
-            <button type="submit" id="enviar_codigo">Enviar Código</button>
-        </div>
-    </form>
+            <div class="botoes">
+                <a id="voltar_login" href="index.html">Voltar para o Login</a>
+                <button type="submit" id="enviar_codigo">Enviar Código</button>
+            </div>
+        </form>
+    </div>
 
-    <form action="rec_senha2.html" method="get">
-        <label for="digitar_codigo">Digite o Código de Recuperação</label>
-        <input type="text" name="digitar_codigo" id="digitar_codigo" placeholder="Insira o Código" minlength="6" maxlength="6" required>
-        
-        <button type="submit" id="codigo">Confirmar</button>
-    </form>
+    <div class="formulario-codigo">
+        <form action="rec_senha2.html" method="get">
+            <label for="digitar_codigo">Digite o Código de Recuperação</label>
+            <input type="text" name="digitar_codigo" id="digitar_codigo" placeholder="Insira o Código" minlength="6" maxlength="6" required>
+            
+            <button type="submit" id="codigo">Confirmar</button>
+        </form>
+    </div>
 </body>
 </html>
