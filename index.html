@@ -4,41 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="assets/images/logo.png">
+    <link rel="icon" href="assets/images/logo_site.png">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>SmartControl</title>
 </head>
 <body>
     <div class="logo-empresa">
-        <img src="assets/images/img_fundo.png" alt="Imagem de fundo">
         <h1 id="titulo">Smart Control - Frebunda Company</h1>
-        <img src="assets/images/logo.png" alt="Logo do SmartControl">
+        <img src="assets/images/logo-sem-fundo.png" alt="Logo do SmartControl">
         <h2 id="subtitulo">Seja Bem-Vindo ao Frebunda Company!<br>
         Faça o login na sua conta!</h2>
+        <div class="rodape">
+            <p> &copy; 2026 Meu Site. Todos Direitos Reservados</p>
+            <ul>
+                <li><a href="https://pedrotech.com.br/pedrolandia/">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </div>
     </div>
 
-    <img src="assets/images/icone_usuario.jpg" alt="Imagem de Perfil" height="100" width="100">
-    <form class="formulario" action="dashboard.html" method="get">
-        <div class="login">
-            <label for="email">E-mail:</label> <br>
-            <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
-            <label for="senha">Senha:</label><br>
-            <input type ="password" name="senha" id="senha" placeholder="Digite sua senha" required>
-        </div>
+    <div class="parte_formulario">
+        <img src="assets/images/icone_usuario.jpg" alt="Imagem de Perfil" id="icone_usuario">
+        <form class="formulario" action="dashboard.html" method="get">
+            <div class="login">
+                <label for="email">E-mail:</label> <br>
+                <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
+                <label for="senha">Senha:</label><br>
+                <input type ="password" name="senha" id="senha" placeholder="Digite sua senha" required>
+            </div>
 
-        <div class="botoes">
-            <a id="cadastro" href="cadastro.html">Cadastrar-se</a>
-            <button type="submit" id="login">Logar</button>
-            <a id="recuperar" href="rec_senha.html">Recuperar senha</a>
-            <a id="saibamais" href="https://www.automateshow.com/blog/how-automation-is-impacting-the-automotive-industry-today" target="_blank">Saiba Mais</a> 
-        </div>
-    </form>
+            <div class="botoes">
+                <a id="cadastro" href="cadastro.html">Cadastrar-se</a>
+                <button type="submit" id="login">Logar</button>
+                <a id="recuperar" href="rec_senha.html">Recuperar senha</a>
+                <a id="saibamais" href="https://www.automateshow.com/blog/how-automation-is-impacting-the-automotive-industry-today" target="_blank">Saiba Mais</a> 
+            </div>
+            
+        </form>
+    </div>
 
     <footer>
-        <p> &copy; 2026 Meu Site. Todos Direitos Reservados</p>
-        <ul>
-            <li><a href="https://pedrotech.com.br/pedrolandia/">Sobre</a></li>
-            <li><a href="#">Contato</a></li>
-        </ul>
+       
     </footer>
 </body>
 </html>
