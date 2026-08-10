@@ -5,12 +5,14 @@
 }
 
 body{
-    background: radial-gradient(circle,rgba(91, 21, 6, 1) 0%, rgba(153, 7, 7, 1) 50%);
+    background: linear-gradient(180deg,rgba(91, 21, 6, 1) 0%, rgba(153, 7, 7, 1) 50%);
     color: rgb(219, 169, 62);
     display: flex;
     flex:content;
     align-items: center;
+    animation: rotate 1s normal infinite forwards ease-in;
 }
+
 .logo-empresa {
     background-image: url(../images/img_fundo.png);
     width: 50%;
@@ -25,6 +27,7 @@ body{
     align-items: center;
     flex-wrap: nowrap;
     align-content: center;
+    text-align: center;
 }
 
 #icone_usuario{
@@ -42,5 +45,52 @@ body{
     width: 50%;
     height: 100dvh;
     flex-wrap: nowrap;
+    gap: 100px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    font-size: larger;
+    
 }
 
+#email, #senha{
+    background-color:aliceblue;
+    width: 600px;
+    height: 50px;
+    border-radius: 10px;
+    border-color:#ffc700;
+    padding: 20px;
+    display:flex;
+    margin-bottom: 30px;
+}
+
+.rodape ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.rodape ul a {
+    color: #ffc700;
+    text-decoration: none;
+    background: linear-gradient(90deg,rgba(91, 21, 6, 1) 0%, rgba(153, 7, 7, 1) 50%);
+    padding: 8px;
+}
+
+.botoes a, .botoes button{
+    display: inline-block;
+    color: #000000;
+    text-decoration: none;
+    background-color:#ffc700;
+    padding: 8px;
+    border-radius:9px;
+    border: none;
+    min-height: 40px;
+    text-align: center;
+    align-content: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+.botoes {
+    display: flex;
+    justify-content: space-evenly;
+}
