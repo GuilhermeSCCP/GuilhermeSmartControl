@@ -4,13 +4,27 @@
     box-sizing:border-box;
 }
 
+@property --gradient-deg {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+}
+
 body{
-    background: linear-gradient(180deg,rgba(91, 21, 6, 1) 0%, rgba(153, 7, 7, 1) 50%);
+    background: linear-gradient(var(--gradient-deg) ,rgba(91, 21, 6, 1) 0%, rgba(153, 7, 7, 1) 50%);
     color: rgb(219, 169, 62);
     display: flex;
     flex:content;
     align-items: center;
-    animation: rotate 1s normal infinite forwards ease-in;
+    animation: rotate 3s normal infinite forwards ease-in;
+}
+
+@keyframes rotate {
+    from {
+        --gradient-deg: 0deg;
+    } to {
+        --gradient-deg: 360deg;
+    }
 }
 
 .logo-empresa {
@@ -52,16 +66,23 @@ body{
 }
 
 #email, #senha{
-    background-color:aliceblue;
-    width: 600px;
+    background-color: aliceblue;
+    max-width: 600px;
     height: 50px;
     border-radius: 10px;
-    border-color:#ffc700;
+    border: 3px solid #ffc700;
     padding: 25px;
-    display:flex;
-    margin-bottom: 30px;
+    display: flex;
+    margin: 10px 0 30px 0;
     font-size: 20px;
+    width: 100%;
+    transition: 0.3s ease-in-out
 }
+
+#email:focus, #senha:focus{
+    outline: none;
+}
+
 input::placeholder{
     color:#000000;
     opacity: 0.4
@@ -70,6 +91,7 @@ input::placeholder{
     list-style: none;
     display: flex;
     gap: 30px;
+    flex-wrap: wrap;
 }
 
 .rodape ul a {
@@ -93,13 +115,26 @@ input::placeholder{
     align-content: center;
     font-size: 20px;
     font-weight: 600;
+    transition: 0.3s ease-in-out
 }
 .botoes {
     display: flex;
-    justify-content: space-evenly;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 label{
     font-size: 30px;
-    
+}
+
+.formulario{
+    padding: 0 20px;
+}
+
+.botoes a:hover, .botoes button:hover{
+    transform: scale(1.15);
+}
+#email:focus, #senha:focus{
+    transform: scale(1.05)
 }
