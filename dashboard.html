@@ -9,33 +9,27 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="navbar">
             <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="cadastro.html">Cadastrar-se</a></li>
-                <li><a href="monitoracao_dashboard.html">Dashboard1</a></li>
-                <li><a href="controle_dashboard.html">Dashboard2</a></li>
+                <li><img src="assets/images/logo-sem-fundo.png" alt="logo do SmartControl" id="logo"></li>
+                <li><h1 id="titulo">Dashboard Geral</h1></li>
+                <li><a href="index.html"><img src="assets/images/logo-saida-sem-fundo.png" alt="logo de saída" id="icone_saida"></a></li>
             </ul>
         </nav>
     </header>
-    <div class="cabecalho">
-        <img src="assets/images/logo.png" alt="logo do SmartControl" id="logo">
-        <a href="index.html"><img src="assets/images/logo_saida.png" alt="logo de saída" id="icone_saida"></a>
-        <h1>Dashboard Geral</h1>
-    </div>
-
-    <div class="caixa_monitoracao">
-        <img src="assets/images/fundo_Monitoracao.png" alt="fundo do dashboard de monitoração de eficiência geral">
-        <h2><a id="titulo_monitoracao" href="monitoracao_dashboard.html">Monitoração de Eficiência Geral</a></h2>
-    </div>
-    <div class="caixa_controle">
-        <img src="assets/images/fundo_Controle.png" alt="fundo do dashboard de controle de produção e logística">
-        <h2><a id="titulo_controle" href="controle_dashboard.html">Controle de Produção e Logística</a></h2>
+    <div class="caixas">
+        <div class="caixa_monitoracao">
+            <h2><a id="titulo_monitoracao" href="monitoracao_dashboard.html">Monitoração de Eficiência Geral</a></h2>
+        </div>
+        <div class="caixa_controle">
+            <h2><a id="titulo_controle" href="controle_dashboard.html">Controle de Produção e Logística</a></h2>
+        </div>
     </div>
 
     <footer>
         <p>&copy; 2026 Meu Site. Todos Direitos Reservados</p>
         <ul>
+            <li><a id="saibamais" href="https://www.automateshow.com/blog/how-automation-is-impacting-the-automotive-industry-today" target="_blank">Saiba Mais</a></li>
             <li><a href="https://pedrotech.com.br/pedrolandia/" target="_blank">Sobre</a></li>
             <li><a href="#">Contato</a></li>
         </ul>
