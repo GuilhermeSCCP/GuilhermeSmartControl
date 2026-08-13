@@ -8,6 +8,12 @@ body{
     background: linear-gradient(180deg ,rgba(91, 21, 6, 1) 0%, rgba(153, 7, 7, 1) 50%);
     color: #ffc700;
     font-family: Arial, sans-serif;
+    min-height: 100dvh;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 50px;
 }
 
 header{
@@ -20,6 +26,7 @@ header{
     position: sticky;
     top: 0;
     background-color: rgba(0, 0, 0, 0.4);
+    z-index: 100%;
 }
 
 .navbar{
@@ -97,7 +104,6 @@ footer{
     text-align: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: 80px;
     padding: 30px;
     font-size: 20px;
     

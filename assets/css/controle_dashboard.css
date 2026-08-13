@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body{
+    background-image: url(../images/fundo_controle_dashboard.png);
+    background-size: cover;
+    color: #ffc700;
+    font-family: Arial, sans-serif;
+    min-height: 100dvh;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+header{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.navbar{
+    width: 100%;
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    list-style: none;  
+}
+.navbar ul a{
+    text-decoration: none;
+    color: #ffffff;
+    display: flex;
+    align-content: center;  
+    align-items: center;
+    font-size: 40px;
+    gap:30px;
+}
+
+#logo{
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+}
+
+#titulo{
+    font-size: 60px;
+}

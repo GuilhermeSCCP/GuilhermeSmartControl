@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body{
+    background-image: url(../images/fundo_monitoracao_dashboard.png);
+    background-size: cover;
+    color: #ffc700;
+    font-family: Arial, sans-serif;
+    min-height: 100dvh;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+header{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.navbar{
+    width: 100%;
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    list-style: none;  
+}
+.navbar ul a{
+    text-decoration: none;
+    color: #ffffff;
+    display: flex;
+    align-content: center;  
+    align-items: center;
+    font-size: 40px;
+    gap:30px;
+}
+
+#logo{
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+}
+
+#titulo{
+    font-size: 60px;
+}
+.caixas{
+    display:flex;
+    justify-content: space-evenly;
+    margin-bottom: 80px;
+}
+
+.caixa1{
+    background: linear-gradient(180deg ,rgba(91, 21, 6, 0.8) 0%, rgba(153, 7, 7, 0.8) 50%);
+    width: 450px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 16px;
+    box-shadow: 4px 4px 16px 0px rgba(0, 0, 0, 0.90);;
+}
+
+.barras{
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    margin-bottom: 20px;
+    color:white;
+}
+.colunas1, .colunas2, .colunas3{
+    border-bottom: 2px solid rgb(85, 85, 85);
+}
+
+.estatistica1{
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+#titulo1{
+    font-size: 28px;
+    margin-top: 15px;
+}
+.coluna1{
+    background-color:#ffc700;
+    width: 40px;
+    height: 250px;
+    color:black;
+}
+.coluna2{
+    background-color:#ff7700;
+    width: 40px;
+    height: 100px;
+    color:black;
+}
+
+.coluna1, .coluna2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.colunas1{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+/*primeira coluna - termino*/
+
+.estatistica2{
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+.coluna3{
+    background-color:#ffc700;
+    width: 40px;
+    height: 270px;
+    color:black;
+}
+.coluna4{
+    background-color:#ff7700;
+    width: 40px;
+    height: 80px;
+    color:black;
+}
+
+.coluna3, .coluna4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.colunas2{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+/*segunda coluna - termino*/
+
+.estatistica3{
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+.coluna5{
+    background-color:#ffc700;
+    width: 40px;
+    height: 180px;
+    color:black;
+}
+.coluna6{
+    background-color:#ff7700;
+    width: 40px;
+    height: 160px;
+    color:black;
+}
+
+.coluna5, .coluna6{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.colunas3{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
