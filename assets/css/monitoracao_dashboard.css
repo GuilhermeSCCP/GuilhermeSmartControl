@@ -187,3 +187,66 @@ header{
     align-items: flex-end;
     justify-content: center;
 }
+
+.dashboard-card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  width: 300px;
+  font-family: sans-serif;
+}
+
+.chart-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.pie-chart {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: conic-gradient(
+    #3b82f6 0% 40%,       /* Produto A: 0% até 40% */
+    #10b981 40% 65%,      /* Produto B: 40% até 65% (40 + 25) */
+    #f59e0b 65% 100%      /* Produto C: 65% até 100% */
+  );
+}
+
+.chart-legend {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  font-size: 14px;
+}
+
+.chart-legend li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+  color: #374151;
+}
+
+.chart-legend span {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.dot-1 { background-color: #3b82f6; }
+.dot-2 { background-color: #10b981; }
+.dot-3 { background-color: #f59e0b; }
+
+.pie-chart.donut {
+    background: radial-gradient(circle closest-side, transparent 60%, white 0),
+                conic-gradient(
+                  #3b82f6 0% 40%,
+                  #10b981 40% 65%,
+                  #f59e0b 65% 100%
+                );
+  }
