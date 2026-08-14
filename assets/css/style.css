@@ -139,3 +139,19 @@ label{
 #email:focus, #senha:focus{
     transform: scale(1.05)
 }
+
+@media(max-width: 768px) {
+    body{
+        flex-direction: column;
+    }
+
+    .logo-empresa,.parte_formulario{
+        width:100%;
+    }
+
+    .logo-empresa{
+        border-right: none;
+        border-bottom:2px solid #ffc700;
+    }
+
+}
