@@ -59,3 +59,100 @@ header{
 #titulo{
     font-size: 60px;
 }
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 16px;
+    box-shadow: 4px 4px 16px 0px rgba(0, 0, 0, 0.20);
+    overflow: hidden;
+    align-self: center;
+    display:flex;
+    flex-direction: column;
+}
+caption {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #CDCEEC;
+    text-align: left;
+    padding-left: 5px;
+}
+tbody, thead{
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius:16px;
+}
+th, td {
+    padding: 16px 20px;
+    text-align: left;
+    color:#ffffff;
+}
+
+thead {
+    background-color:rgba(0, 0, 0, 0.8);
+}
+tbody{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+thead th {
+    min-width: 200px;
+    color: #CDCEEC;
+    font-size: 1rem;
+    font-weight: 600;
+    border-bottom: 2px solid rgba(205, 206, 236, 0.1);
+}
+
+tbody tr {
+    transition: all 0.3s ease-in-out;
+}
+
+tbody tr:hover {
+    background-color:rgba(205, 206, 236, 0.15);
+    transform: scale(1.01);
+}
+
+tbody td {
+    min-width: 200px;
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+main {
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    margin: 40px auto;
+    padding: 0px 20px;
+    gap: 30px;
+}
+footer{
+    background-color: rgba(0, 0, 0, 0.4) ;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    font-size: 20px;
+    
+}
+footer ul{
+    list-style: none;
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+footer ul a{
+    color: #ffc700;
+    text-decoration: none;
+    background-color: rgba(153, 7, 7, 1);
+    padding: 10px;
+    border-radius: 10px;
+}
