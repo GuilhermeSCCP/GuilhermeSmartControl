@@ -150,7 +150,7 @@ a{
 #subtitulo_login{
     color:#ffc700;
 }
-
+@media(max-width: 768px) {
 .link{
     display: flex;
     flex-direction: row;
@@ -160,7 +160,7 @@ html{
     scroll-behavior: smooth;
 }
 
-@media(max-width: 768px) {
+
     body{
         flex-direction: column;
     }
