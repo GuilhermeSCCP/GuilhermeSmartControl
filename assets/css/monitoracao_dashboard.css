@@ -47,7 +47,7 @@ header{
     align-content: center;  
     align-items: center;
     font-size: 30px;
-    gap:10px;
+    gap:5px;
 }
 
 #logo{
@@ -58,6 +58,8 @@ header{
 
 #titulo{
     font-size: 60px;
+    display: flex;
+    text-align: center;
 }
 .caixas{
     display:flex;
@@ -81,7 +83,7 @@ header{
 }
 
 .barras{
-    width: 400px;
+    gap:15px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -301,8 +303,6 @@ footer{
     font-size: 20px;
     
 }
-
-
 footer ul{
     list-style: none;
     display: flex;
@@ -326,7 +326,10 @@ footer ul a{
 
 @media(max-width: 768px) {
     #titulo, .navbar ul a{
-        font-size:mediumgit;
+        font-size: 15px;
+    }
+    .navbar ul{
+        gap: 10px;
     }
     .caixas{
         padding: 0 20px;

@@ -150,17 +150,21 @@ a{
 #subtitulo_login{
     color:#ffc700;
 }
-@media(max-width: 768px) {
 .link{
     display: flex;
-    flex-direction: row;
-    gap: 10px;
-}
-html{
-    scroll-behavior: smooth;
+    justify-content: space-around;
+    gap: 30px;        
 }
 
-
+@media(max-width: 768px) {
+    .link{
+        flex-direction: row;
+        gap: 10px;
+    }
+    html{
+        scroll-behavior: smooth;
+    }
+    
     body{
         flex-direction: column;
     }
@@ -183,10 +187,7 @@ html{
         display: flex;
         flex-direction: column;
     }
-    .link{
-        display: flex;
-        justify-content: space-around;        
-    }
+    
     .rodape ul{
         flex-direction: column;
     }
