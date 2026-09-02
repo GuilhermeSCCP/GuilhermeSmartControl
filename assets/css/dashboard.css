@@ -60,6 +60,11 @@ header{
 .divisao{
     padding: 11rem 0;
 }
+
+.botao_info {
+    z-index: 1000;
+}
+
 .botaoInfo {
     margin-left: 2rem;
     margin-top: 1rem;
@@ -77,6 +82,8 @@ header{
     font-size: 20px;
     font-weight: 600;
     transition: 0.3s ease-in-out;
+    outline: none;
+    cursor: pointer;
 }
 .botaoInfo:hover{
     opacity: 0.8;
@@ -87,8 +94,9 @@ header{
     opacity: 0;
     transition: all 0.3s ease-in-out;
     position: absolute;
-    z-index: 1000;
-    background-color: rgba(0,0,0,0.8);
+    z-index: -1;
+    background-color: rgba(151, 0, 0, 0.9);
+    color: #ffc700;
     width: 450px;
     height: 500px;
     display: flex;
@@ -97,6 +105,10 @@ header{
     align-content: center;
     align-items: center;
     border-radius: 22px;
+    padding: 3rem;
+    font-size: 1.4rem;
+    text-align: justify;
+    font-family: "Aldrich", sans-serif
 }
 
 .info-text-active{
@@ -110,7 +122,6 @@ header{
     border-radius: 22px;
     text-align: center;
     display: flex;
-    /* justify-content: center; */
     align-items: flex-start;
     box-shadow: 4px 4px 16px 0px rgba(0, 0, 0, 0.90);
     flex-direction: column;
