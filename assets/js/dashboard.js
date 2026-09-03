@@ -28,15 +28,3 @@ botaoControle.addEventListener('click', (event) => {
 
     botaoControle.querySelector('.info-text').classList.toggle('info-text-active');
 })
-
-// botaoInfo.addEventListener('click', (event) => {
-//     event.preventDefault();
-
-//     console.log(event.target);
-
-//     alert("Botão pressionado!");
-// })
-
-// function toggleInfo(){
-
-// }

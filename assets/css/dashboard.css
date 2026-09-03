@@ -62,7 +62,7 @@ header{
 }
 
 .botao_info {
-    z-index: 1000;
+    z-index: 999;
 }
 
 .botaoInfo {
@@ -97,7 +97,7 @@ header{
     z-index: -1;
     background-color: rgba(151, 0, 0, 0.9);
     color: #ffc700;
-    width: 450px;
+    max-width: 450px;
     height: 500px;
     display: flex;
     flex-direction: row;
@@ -152,10 +152,6 @@ header{
     transition: 0.3s ease-in-out;
 }
 
-.caixa_controle:hover, .caixa_monitoracao:hover{
-    transform: scale(1.05);
-}
-
 footer{
     background-color: rgba(0, 0, 0, 0.4) ;
     display: flex;
@@ -191,6 +187,12 @@ footer ul a{
     gap:50px;
 }
 
+@media (min-width: 768px){
+    .caixa_controle:hover, .caixa_monitoracao:hover{
+        transform: scale(1.05);
+    }
+}
+
 @media(max-width: 768px) {
     #titulo{
         font-size:x-large;
@@ -201,5 +203,11 @@ footer ul a{
     footer ul{
         flex-direction: column;
         justify-content: center;
+    }
+}
+
+@media (max-width: 480px){
+    .caixa_controle, .caixa_monitoracao, .info-text {
+        max-width: 372px;
     }
 }
