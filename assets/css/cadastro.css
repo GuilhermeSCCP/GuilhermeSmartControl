@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+
+@property --gradient-deg {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+}
+
+body{
+    background: linear-gradient(var(--gradient-deg) ,rgba(91, 21, 6, 1) 0%, rgba(153, 7, 7, 1) 50%);
+    color: rgb(219, 169, 62);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: rotate 3s normal infinite forwards ease-in;
+}
+
+@keyframes rotate {
+    from {
+        --gradient-deg: 0deg;
+    } to {
+        --gradient-deg: 360deg;
+    }
+}
+
+#icone_usuario{
+    width: 200px;
+    height: 200px;
+    border-radius: 150px;
+    margin-bottom: 2rem;
+}
+
+.cadastro{ 
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: left;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    font-size: larger;
+}
+label{
+    font-size: 1.7rem;
+    margin-left: 1rem;
+}
+
+#nome_completo, #email, #senha{
+    background-color: aliceblue;
+    height: 2rem;
+    width: clamp(30rem, 70vh, 35rem);
+    border-radius: 10px;
+    border: 3px solid #ffc700;
+    padding: 25px;
+    display: flex;
+    font-size: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+#nome_completo:focus, #email:focus, #senha:focus{
+    outline: none;
+    transform: scale(1.05)
+}
+
+input::placeholder{
+    color:#000000;
+    opacity: 0.4;
+}
+
+.botoes a:hover, .botoes button:hover{
+    transform: scale(1.15);
+}
+
+header{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1000;
+}
+
+.navbar{
+    width: 100%;
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    list-style: none;   
+}
+
+#logo{
+    width: 100px;
+    height:100px;
+}
+
+#titulo{
+    font-size: 60px;
+    font-family: Arial, sans-serif;
+}
