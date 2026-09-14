@@ -4,32 +4,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/rec_senha.css">
+    <link rel="icon" href="assets/images/logo_site.png">
     <title>SmartControl | Recuperar Senha</title>
 </head>
 <body>
-    <div class="formulario-email">
-        <h1>Digite seu email de recuperação</h1>
-        <img src="assets/images/icone_usuario.jpg" alt="ícone de usuário">
-        <form method="dialog">
-            <div class="recuperar_senha">
-                <label for="email">E-mail:</label> <br>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><img src="assets/images/logo-sem-fundo.png" alt="logo do SmartControl" id="logo"></li>
+                <li><h1 id="titulo">Recuperar Senha</h1></li>
+                <li><a href="index.html"><img src="assets/images/logo-saida-sem-fundo.png" alt="logo de saída" id="icone_saida"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="formulario">
+        <div class="formulario-email">
+            <form method="dialog">
+                <label for="email">E-mail para Receber Código:</label>
                 <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
-            </div>
+                <div class="botoes">
+                    <button type="submit" id="enviar_codigo">Enviar Código</button>
+                </div>
+            </form>
+        </div>
 
-            <div class="botoes">
-                <a id="voltar_login" href="index.html">Voltar para o Login</a>
-                <button type="submit" id="enviar_codigo">Enviar Código</button>
+        <div class="formulario-codigo">
+            <form action="rec_senha2.html" method="get">
+                <label for="digitar_codigo">Digite o Código de Recuperação:</label>
+                <div class="codigo">
+                    <input name="digitar_codigo" type="text" maxlength="1" required>
+                    <input type="text" maxlength="1" required>
+                    <input type="text" maxlength="1" required>
+                    <input type="text" maxlength="1" required>
+                    <input type="text" maxlength="1" required>
+                    <input type="text" maxlength="1" required>
+                </div>
+                    <button type="submit" id="codigo">Confirmar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <ul>
+            <div class="itens_footer">
+                <div class="links">
+                    <li><p> &copy; 2026 Meu Site. Todos Direitos Reservados</p></li>
+                    <div class="link">
+                        <li><a id="sobre" href="https://pedrotech.com.br/pedrolandia/">Sobre</a></li>
+                        <li><a id="contato" href="#">Contato</a></li>
+                    </div>
+                </div>
+                <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1600.6659876351232!2d-43.35138192433885!3d-21.752435486971248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x989c976673a705%3A0xb0aa4dd64090a7f5!2sSENAI%20Juiz%20de%20Fora%20CFP%20Jos%C3%A9%20Fagundes%20Netto!5e1!3m2!1spt-BR!2sbr!4v1785871436700!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
             </div>
-        </form>
-    </div>
-
-    <div class="formulario-codigo">
-        <form action="rec_senha2.html" method="get">
-            <label for="digitar_codigo">Digite o Código de Recuperação</label>
-            <input type="text" name="digitar_codigo" id="digitar_codigo" placeholder="Insira o Código" minlength="6" maxlength="6" required>
-            
-            <button type="submit" id="codigo">Confirmar</button>
-        </form>
-    </div>
+        </ul>
+    </footer>
+    <script src="assets/js/rec_senha.js"></script>
 </body>
 </html>

@@ -4,25 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/rec_senha2.css">
+    <link rel="icon" href="assets/images/logo_site.png">
     <title>SmartControl | Recuperar Senha</title>
 </head>
 <body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="rec_senha.html"><img src="assets/images/logo-voltar-sem-fundo.png" alt="logo de Voltar" id="logo"><h3>Voltar</h3></a></li>
+                <li><h1 id="titulo">Registre sua Nova Senha</h1></li>
+                <li><a href="index.html"><img src="assets/images/logo-saida-sem-fundo.png" alt="logo de saída" id="icone_saida"></a></li>
+            </ul>
+        </nav>
+    </header>
     <div class="formulario">
-        <h1>Registre sua nova Senha</h1>
-        <img src="assets/images/icone_usuario.jpg" alt="ícone de usuário">
-        <form action="index.html" method="get">
+        <div class="icone_usuario"><img id="icone_usuario" src="assets/images/icone_usuario.jpg" alt="ícone de usuário"></div>
+        <form action="index.html" method="get" id="form">
             <div class="registrar_senha">
-                <label for="nova_senha">Nova Senha</label> <br>
+                <label for="nova_senha">Nova Senha:</label>
                 <input type="text" name="nova_senha" id="nova_senha" placeholder="Digite a senha" minlength="8" maxlength="20" required>
-                <label for="confirme_senha">Confirme a Senha</label> <br>
+                <label for="confirme_senha">Confirme a Senha:</label>
                 <input type="text" name="confirme_senha" id="confirme_senha" placeholder="Digite a senha" minlength="8" maxlength="20" required>
             </div>
 
             <div class="botoes">
-                <a id="voltar_login" href="index.html">Voltar para o Login</a>
-                <button type="submit" id="botao_registrar">Registrar a Senha</button>
+                <button type="submit" class="botao_registrar">Registrar a Senha</button>
             </div>
         </form>
     </div>
+    <footer>
+        <ul>
+            <div class="itens_footer">
+                <div class="links">
+                    <li><p> &copy; 2026 Meu Site. Todos Direitos Reservados</p></li>
+                    <div class="link">
+                        <li><a id="sobre" href="https://pedrotech.com.br/pedrolandia/">Sobre</a></li>
+                        <li><a id="contato" href="#">Contato</a></li>
+                    </div>
+                </div>
+                <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1600.6659876351232!2d-43.35138192433885!3d-21.752435486971248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x989c976673a705%3A0xb0aa4dd64090a7f5!2sSENAI%20Juiz%20de%20Fora%20CFP%20Jos%C3%A9%20Fagundes%20Netto!5e1!3m2!1spt-BR!2sbr!4v1785871436700!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+        </ul>
+    </footer>
+    <script src="assets/js/rec_senha2.js"></script>
 </body>
 </html>
